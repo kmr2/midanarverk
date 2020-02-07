@@ -1,0 +1,87 @@
+
+.error {
+    color:red
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:2em;
+}
+body {
+    background-color: coral;
+}
+img {
+    max-width: 100%;
+    height: 5em;
+}
+.headernav {
+    display:flex;
+    flex-wrap:row;
+    justify-content: center;
+}
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 2em;
+    background-color: rgb(255, 112, 60);
+}
+nav a {
+    text-decoration: none;
+    padding: .5em 2em;
+    text-align: center;
+}
+.box, .box2 {
+    border:0.75px solid;
+    border-radius:5px;
+    text-align:center;
+}
+.box a, .goto a {
+    display: block;
+    text-decoration: none;
+    background-color: rgb(255, 112, 60);
+    padding: .5em;
+    text-align: center;
+}
+nav a:hover, 
+.box a:hover, .box a:active, 
+.goto a:hover, .goto a:active  {
+    background-color: rgb(255, 85, 23);
+}
+.padding {
+    padding-top:3em;
+}
+
+body {
+    max-width: 48em;
+    margin:0 auto;
+    
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid rgb(255, 85, 23);
+    text-align: left;
+    padding: 8px;
+    width: 50%;
+}
+tr:nth-child(2n) {
+    background-color: rgb(255, 165, 132);
+}
+.fotur{
+    text-align: center;
+    margin-top:5em;
+}
+.haus {
+    margin-bottom:1em;
+    
+    text-align: center;
+    
+}
+.ft {
+    font-family: 'Libre Baskerville', serif; 
+    font-size: 15px;   
+}
+

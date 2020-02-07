@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Bensínstöðvar{% endblock %}
+{% block content %}
+
+<table>
+    <caption>Allar stöðvar fyrirtæksins</caption>
+    <tr>
+        <th>Fyrirtæki</th>
+        <th>Staður</th>
+    </tr>
+    {% for item in data['results'] %}
+    <tr>
+        {% if item.company == com %}
+        <td>{{ item.company }}</a></td>
+        <td><a href="/moreinfo/{{ item.key }}">{{ item.name }}</a></td>
+        {% endif %}
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

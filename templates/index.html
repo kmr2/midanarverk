@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %} {% endblock %}
+{% block content %}
+    {% set oneco = [] %}
+    <div class="row">
+    {% for item in data['results'] %}
+        {% if item.company not in oneco %}
+            {% do oneco.append(item.company) %}
+            <div class="box">
+                <a href="/company/{{ item.company }}">
+                    <img src="/static/{{ item.company }}.png" title="{{ item.company }}">
+                </a>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}
