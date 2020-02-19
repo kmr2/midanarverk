@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}Bensínstöðvar{% endblock %}
+{% block content %}
+
+
+    {% for item in data['results'] %}
+        {% if item.key == k %}
+    <div class="row">
+        <div>
+            <h2>Nánari upplýsingar Bensínstöðvar</h2>   
+            <h3>Söluaðili: {{ item.company }}</h3>
+            <h3>Staður: {{ item.name }}</h3>
+            <h4>Verð á 1 lítra af bensini, 95 oktan: {{ item.bensin95 }} kr.</h4>
+            <h4>Verð á 1 lítra af dieselolíu: {{ item.diesel }} kr.</h4>
+        </div>
+        <div>
+            <h2>Staðsetning Bensínstöðvar</h2>
+            <ul>    
+                <li>Breiddargráða: {{ item.geo.lat }}</li>
+                <li>Lengdargráða: {{ item.geo.lon }}      </li>
+                <li><a class="gogle" href="https://www.google.com/maps/@{{ item.geo.lat }},{{ item.geo.lon }}/">Staðsetning á google maps</a></li>
+            </ul>   
+        </div>
+    </div>  
+        {% endif %}
+    {% endfor %}
+    
+{% endblock %}

@@ -8,6 +8,8 @@
         <th>Fyrirtæki</th>
         <th>Staður</th>
     </tr>
+
+    {% set cnt = [] %}
     {% for item in data['results'] %}
     <tr>
         {% if item.company == com %}
@@ -17,5 +19,5 @@
     </tr>
     {% endfor %}
 </table>
-
+<h3>Fjöldi stöðvar: {{ cnt | length }}</h3>
 {% endblock %}

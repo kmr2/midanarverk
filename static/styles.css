@@ -26,10 +26,13 @@ nav {
     margin-bottom: 2em;
     background-color: rgb(255, 112, 60);
 }
-nav a {
+nav a  {
     text-decoration: none;
     padding: .5em 2em;
     text-align: center;
+}
+.gogle {
+    text-decoration:none;
 }
 .box, .box2 {
     border:0.75px solid;
@@ -85,3 +88,7 @@ tr:nth-child(2n) {
     font-size: 15px;   
 }
 
+.middle {
+    max-width:25em;
+    margin:0 auto;
+}

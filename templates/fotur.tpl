@@ -1,3 +1,3 @@
 <footer class="fotur">
-<h5>mbl.is - forstafold 99 - reykjavik 101 - donathantrumb@gmail.com </h5>
+<h5>Kristófer Máni Róbertsson - VEFÞ2VF05CU </h5> <p>Síðast uppfært: {{ data.timestampPriceCheck | format_time }}</p>
 </footer>
